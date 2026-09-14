@@ -1,22 +1,45 @@
-# Adoption Pawtal
+# 🐾 Adoption Pawtal
 
-A PHP-based pet adoption system for managing pets, applications, admin actions, and email notifications.
+A clean and functional PHP-based pet adoption platform designed to help users browse available pets, submit adoption applications, and let admins manage listings, statuses, and notifications.
 
-## Project structure
+---
 
-- `pet-adoption-system/` - application source code
-- `pet_adoption_system.sql` - database schema and seed data
+## ✨ Features
+- Responsive and user-friendly website interface
+- Pet listing and details page for visitors
+- Adoption application form for interested adopters
+- Admin dashboard for managing pets and applications
+- Application status updates and email notifications
+- Image upload support for pet profiles
 
-## Requirements
+---
 
+## 📌 Project Overview
+This project is made for our LBYCPG2 laboratory subject.
+
+Contributers:
+- Melanie Dotollo (Coding)
+- Romela Angeline Galono (Coding)
+- Xhane Batiller (Documentation)
+- Zamanttha Zyrah Sahidulla (UI/UX design)
+
+---
+
+## 📸 Preview
+Screenshot coming soon.
+
+---
+
+## 🛠️ Requirements
 - PHP 8.0+
 - MySQL or MariaDB
 - Apache or Nginx
 - Composer
 
-## Local setup
+---
 
-1. Start your local PHP/MySQL environment (XAMPP, WAMP, Laragon, or similar).
+## 🚀 Getting Started
+1. Start your local PHP and MySQL environment using XAMPP, WAMP, Laragon, or similar.
 2. Create a database named `pet_adoption_system`.
 3. Import the SQL file:
 
@@ -24,35 +47,49 @@ A PHP-based pet adoption system for managing pets, applications, admin actions, 
 mysql -u root -p pet_adoption_system < pet_adoption_system.sql
 ```
 
-4. Copy the example environment file:
-
-```bash
-copy .env.example .env
-```
-
-5. Update your database settings in the environment or in the app config if needed.
-6. Install Composer dependencies:
+4. Install Composer dependencies:
 
 ```bash
 cd pet-adoption-system
 composer install
 ```
 
-7. Run the app from `pet-adoption-system/public` using your local web server.
+5. Run the project using your local web server and open the app from `pet-adoption-system/public`.
 
-## Admin access
+---
 
-Use the admin login page under `pet-adoption-system/admin/login.php`.
+## 📂 Project Structure
+```bash
+adoption-pawtal/
+├── pet-adoption-system/
+│   ├── admin/
+│   ├── config/
+│   ├── includes/
+│   ├── public/
+│   ├── uploads/
+│   ├── composer.json
+│   └── vendor/
+├── pet_adoption_system.sql
+├── README.md
+└── .gitignore
+```
 
-## Notes
+---
 
-- The project currently stores database configuration in PHP config files, so local credentials should not be committed publicly.
-- Uploads for pet images are stored under `pet-adoption-system/uploads/pets/`.
+## 🔐 Admin Access
+Use the admin login page at:
 
-## GitHub publishing
+`pet-adoption-system/admin/login.php`
 
-Initialize the repository and push to GitHub:
+---
 
+## 📝 Notes
+- Database configuration is stored in PHP config files, so local credentials should not be committed publicly.
+- Uploaded pet images are saved under `pet-adoption-system/uploads/pets/`.
+
+---
+
+## 📤 GitHub Publishing
 ```bash
 git init
 git branch -M main
