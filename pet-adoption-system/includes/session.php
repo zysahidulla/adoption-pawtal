@@ -1,0 +1,17 @@
+<?php
+// includes/session.php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+function requireAdmin() {
+    if (!isset($_SESSION['admin_id'])) {
+        header('Location: login.php');
+        exit();
+    }
+}
+
+function getAdminName() {
+    return $_SESSION['admin_name'] ?? 'Admin';
+}
+?>

@@ -1,0 +1,25 @@
+# PHP / Composer
+pet-adoption-system/vendor/
+pet-adoption-system/composer.lock
+
+# Environment
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Uploads (keep placeholder only)
+pet-adoption-system/uploads/pets/*
+!pet-adoption-system/uploads/pets/.gitkeep
+
+# IDE / editor
+.vscode/
+.idea/
+
+# Local database dump / temp files
+*.sql~
