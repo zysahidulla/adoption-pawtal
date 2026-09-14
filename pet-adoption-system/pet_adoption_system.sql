@@ -208,7 +208,6 @@ CREATE TABLE `pets` (
 --
 
 INSERT INTO `pets` (`animal_id`, `intake_type`, `intake_date`, `pet_name`, `animal_type`, `pet_age`, `pet_size`, `color`, `breed`, `sex`, `adoption_status`, `photo_path`, `description`, `created_at`) VALUES
-('A1234568', 'FOSTER', '2025-11-19', 'testing1', 'CAT', '1 year', 'SMALL', 'white, black, orange', 'CALICO', 'F', 'Available', NULL, '', '2025-11-19 01:38:15'),
 ('A348332', 'OWNER SUR', '2023-05-10', 'TIRAMISU', 'CAT', '14 YEARS', 'MED', 'BRN TABBY / WHITE', 'DOMESTIC SH', 'S', 'Available', NULL, NULL, '2025-11-19 01:19:53'),
 ('A427950', 'RETURN', '2025-09-21', 'BOSWELL', 'DOG', '8 YEARS', 'MED', 'BLACK', 'CHINESE SHARPEI', 'S', 'Available', NULL, NULL, '2025-11-19 01:19:53'),
 ('A478716', 'OWNER SUR', '2024-06-15', 'BANANA', 'DOG', '9 YEARS', 'LARGE', 'BLACK / WHITE', 'BOXER / MIX', 'S', 'Available', NULL, NULL, '2025-11-19 01:19:53'),
