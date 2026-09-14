@@ -26,7 +26,7 @@ Contributers:
 ---
 
 ## 📸 Preview
-![Screenshot](image1.png)(image2.png)
+![Screenshot](image1.png)
 
 ---
 
