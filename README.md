@@ -1,65 +1,107 @@
-# 🐾 Adoption Pawtal
+# Adoption Pawtal
 
-A clean and functional PHP-based pet adoption platform designed to help users browse available pets, submit adoption applications, and let admins manage listings, statuses, and notifications.
-
----
-
-## ✨ Features
-- Responsive and user-friendly website interface
-- Pet listing and details page for visitors
-- Adoption application form for interested adopters
-- Admin dashboard for managing pets and applications
-- Application status updates and email notifications
-- Image upload support for pet profiles
+Adoption Pawtal is a PHP-based pet adoption platform designed to connect prospective adopters with animals seeking permanent homes. The system provides a public-facing adoption experience for browsing available pets, submitting applications, and managing adoption-related workflows through an administrative dashboard.
 
 ---
 
-## 📌 Project Overview
-This project is made for our LBYCPG2 laboratory subject.
+## Overview
 
-Contributers:
-- Melanie Dotollo (Coding)
-- Romela Angeline Galono (Coding)
-- Xhane Batiller (Documentation)
-- Zamanttha Zyrah Sahidulla (UI/UX design)
+The application enables visitors to view current pets available for adoption, filter listings by relevant criteria, and access detailed profiles for each animal. Administrators can manage pet records, review application submissions, update adoption statuses, and communicate with applicants through the built-in email workflow.
+
+This project was developed for the LBYCPG2 laboratory subject and serves as a practical implementation of a web-based adoption management system.
 
 ---
 
-## 📸 Preview
+## Features
+
+- Responsive and user-friendly public interface for pet browsing
+- Search and filtering by animal type, size, sex, and name or breed
+- Detailed pet profiles with age, breed, size, and sex information
+- Adoption application form for interested users
+- Administrative dashboard for managing pets and applications
+- Application status tracking and approval workflow
+- Email notifications for updates and communication
+- Pet image upload support for profile listings
+- Secure database-backed architecture using PHP and MySQL
+
+---
+
+## Contributors
+
+- Melanie Dotollo - Coding
+- Romela Angeline Galono - Coding
+- Xhane Batiller - Documentation
+- Zamanttha Zyrah Sahidulla - UI/UX Design
+
+---
+
+## Screenshot
+
 ![Screenshot](image1.png)
 
 ---
 
-## 🛠️ Requirements
-- PHP 8.0+
+## Requirements
+
+- PHP 8.0 or later
 - MySQL or MariaDB
-- Apache or Nginx
+- Apache or Nginx web server
 - Composer
+- Web browser with JavaScript enabled
 
 ---
 
-## 🚀 Getting Started
-1. Start your local PHP and MySQL environment using XAMPP, WAMP, Laragon, or similar.
-2. Create a database named `pet_adoption_system`.
-3. Import the SQL file:
+## Installation
 
-```bash
-mysql -u root -p pet_adoption_system < pet_adoption_system.sql
-```
+1. Clone the repository:
 
-4. Install Composer dependencies:
+   ```bash
+   git clone <repository-url>
+   cd adoption-pawtal
+   ```
 
-```bash
-cd pet-adoption-system
-composer install
-```
+2. Start your local PHP and MySQL environment using XAMPP, WAMP, Laragon, or another preferred stack.
 
-5. Run the project using your local web server and open the app from `pet-adoption-system/public`.
+3. Create a database named `pet_adoption_system`.
+
+4. Import the SQL file:
+
+   ```bash
+   mysql -u root -p pet_adoption_system < pet_adoption_system.sql
+   ```
+
+5. Install Composer dependencies:
+
+   ```bash
+   cd pet-adoption-system
+   composer install
+   ```
+
+6. Run the project using your local web server and open the application from the `pet-adoption-system/public` directory.
 
 ---
 
-## 📂 Project Structure
-```bash
+## Configuration
+
+The database connection settings are defined in the project configuration files under `pet-adoption-system/config/`. Ensure that your local credentials match your environment before running the application.
+
+Uploaded pet images are stored in the `pet-adoption-system/uploads/pets/` directory.
+
+---
+
+## Admin Access
+
+The administrative login page is available at:
+
+`pet-adoption-system/admin/login.php`
+
+Use valid admin credentials configured in the database to access the management dashboard.
+
+---
+
+## Project Structure
+
+```text
 adoption-pawtal/
 ├── pet-adoption-system/
 │   ├── admin/
@@ -68,28 +110,53 @@ adoption-pawtal/
 │   ├── public/
 │   ├── uploads/
 │   ├── composer.json
+│   ├── composer.lock
 │   └── vendor/
 ├── pet_adoption_system.sql
 ├── README.md
-└── .gitignore
+├── image1.png
+├── .gitignore
+└── index.html
 ```
 
 ---
 
-## 🔐 Admin Access
-Use the admin login page at:
+## Notes
 
-`pet-adoption-system/admin/login.php`
-
----
-
-## 📝 Notes
-- Database configuration is stored in PHP config files, so local credentials should not be committed publicly.
-- Uploaded pet images are saved under `pet-adoption-system/uploads/pets/`.
+- Database credentials should not be committed to a public repository.
+- The system is intended for local or controlled deployment environments.
+- GitHub Pages is used only for the static landing page; the full application requires a PHP server and a MySQL database.
 
 ---
 
-## 📤 GitHub Publishing
+## License
+
+MIT License
+
+Copyright (c) 2026
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## GitHub Publishing
+
 ```bash
 git init
 git branch -M main
@@ -99,4 +166,4 @@ git remote add origin https://github.com/YOUR_USERNAME/adoption-pawtal.git
 git push -u origin main
 ```
 
-Replace `YOUR_USERNAME` with your GitHub username.
+Replace `YOUR_USERNAME` with your actual GitHub username.
